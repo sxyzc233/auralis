@@ -185,3 +185,19 @@ const ctx: mindSporeLite.Context = {
 
 **注意**：本机没有鸿蒙设备，NPU 路径**未真机验证**——代码已就绪，需要你在真机上点一下
 「NPU (NNRT)」看状态栏显示的是实际设备名还是「未检出 NPU 设备，已回退 CPU」。
+
+## 许可与致谢
+
+本项目使用的模型与运行时**全部为宽松型许可（Apache-2.0 / MIT），允许商业使用**：
+
+| 组件 | 来源 | 许可 |
+|---|---|---|
+| 音频编码器 + 投影层 | [laion/Majestrino-1.00](https://huggingface.co/laion/Majestrino-1.00) | Apache-2.0 |
+| 编码器基座 + mel 滤波器 | [openai/whisper-small](https://huggingface.co/openai/whisper-small) | Apache-2.0 |
+| 57 项嗓音专家头 | [laion/Majestrino-1.00-voice-experts](https://huggingface.co/laion/Majestrino-1.00-voice-experts) | MIT |
+| 端侧推理引擎 | [MindSpore Lite](https://gitee.com/mindspore/mindspore-lite)（系统库，未随包分发） | Apache-2.0 |
+
+**对原模型的修改**（Apache-2.0 §4(b) 要求声明）：仅导出音频分支、算子改写以适配 MindSpore Lite、
+fp16 序列化权重——详见 [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)。
+
+许可原文：[LICENSE-APACHE-2.0.txt](LICENSE-APACHE-2.0.txt) · [LICENSE-MIT.txt](LICENSE-MIT.txt)
