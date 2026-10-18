@@ -205,3 +205,11 @@ const ctx: mindSporeLite.Context = {
 fp16 序列化权重——详见 [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)。
 
 许可原文：[LICENSE-APACHE-2.0.txt](LICENSE-APACHE-2.0.txt) · [LICENSE-MIT.txt](LICENSE-MIT.txt)
+
+## 开源许可
+
+本项目采用 **Apache License 2.0** 开源，全文见 [LICENSE](LICENSE)。
+
+选择 Apache-2.0 的原因：本项目所用的 Majestrino / Whisper-small 模型同为 Apache-2.0，
+条款天然兼容，且附带明确的专利授权。第三方组件的署名与修改声明见
+[THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)。
