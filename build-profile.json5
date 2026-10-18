@@ -1,0 +1,33 @@
+﻿{
+  app: {
+    // 本文件为入库版本：signingConfigs 已清空，避免泄露本机证书路径与密码。
+    // 本地构建前请用 DevEco Studio 的 File > Project Structure > Signing Configs
+    // 生成/选择签名，或把证书信息填回 signingConfigs。
+    signingConfigs: [],
+    products: [
+      {
+        name: 'default',
+        signingConfig: 'default',
+        compatibleSdkVersion: '5.0.0(12)',
+        targetSdkVersion: '26.0.0',
+        runtimeOS: 'HarmonyOS',
+      },
+    ],
+    buildModeSet: [
+      { name: 'debug' },
+      { name: 'release' },
+    ],
+  },
+  modules: [
+    {
+      name: 'entry',
+      srcPath: './entry',
+      targets: [
+        {
+          name: 'default',
+          applyToProducts: ['default'],
+        },
+      ],
+    },
+  ],
+}

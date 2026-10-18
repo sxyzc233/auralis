@@ -1,0 +1,51 @@
+# ---------------- HarmonyOS / hvigor 构建产物 ----------------
+build/
+.cxx/
+.hvigor/
+.hvigor-cache/
+*.hvigor/
+entry/build/
+entry/.cxx/
+**/intermediates/
+**/outputs/
+**/generated/
+
+# ---------------- 签名与本地环境（绝不入库） ----------------
+# build-profile.json5 里会写入本机证书路径与密码，提交前请确认已清空 signingConfigs
+# 本地签名配置备份（含密钥，已忽略）
+*.bak
+build-profile.local.json5
+local.properties
+signing/
+*.p12
+*.cer
+*.p7b
+*.csr
+*.keystore
+*.jks
+
+# ---------------- 依赖 ----------------
+oh_modules/
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+
+# ---------------- 编辑器 / 系统 ----------------
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------- 日志与临时文件 ----------------
+*.log
+hilog*.txt
+*.tmp
+*.swp
+
+# ---------------- 大模型文件（超过 GitHub 100MB 单文件上限） ----------------
+# encoder.ms 约 174MB、heads.ms 约 26MB，请用 Git LFS 或按 README 自行放置
+entry/src/main/resources/rawfile/encoder.ms
+entry/src/main/resources/rawfile/heads.ms
+entry/src/main/resources/rawfile/*.ms

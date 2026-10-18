@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "声析 Auralis 本地嗓音评测"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "声析 Auralis"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "声析 Auralis"
+    },
+    {
+      "name": "mic_reason",
+      "value": "录制嗓音用于本地声学分析"
+    }
+  ]
+}
