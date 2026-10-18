@@ -1,4 +1,8 @@
 ﻿# 声析 Auralis · 鸿蒙版（HarmonyOS / ArkTS + MindSpore Lite）
+> **贡献者**（排名不分先后）：顾铭文、张厚梁、朱文强、裴孝天、腊炽、王蒙润、王郝爱
+>
+> 本项目为小组协作成果，详见 [CONTRIBUTORS.md](CONTRIBUTORS.md)。
+
 
 把嗓音健康推理**完整搬到鸿蒙手机上本地运行**，音频不出设备。与安卓版同一套模型与算法，
 但端侧推理引擎换成 **MindSpore Lite**（HarmonyOS 系统内置的轻量化 AI 引擎）。
